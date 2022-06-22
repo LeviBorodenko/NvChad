@@ -9,4 +9,14 @@ M.ui = {
    theme = "gruvchad",
 }
 
+M.plugins = {
+   override = {},
+   remove = {},
+   user = {},
+   options = {
+      lspconfig = {
+         setup_lspconf = "custom.plugins.lspconfig", -- path of lspconfig file
+      },
+   },
+}
 return M
