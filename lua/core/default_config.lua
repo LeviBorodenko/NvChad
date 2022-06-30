@@ -7,7 +7,7 @@ M.options = {
    user = function() end,
 
    nvChad = {
-      update_url = "https://github.com/NvChad/NvChad",
+      update_url = "https://github.com/LeviBorodenko/NvChad",
       update_branch = "main",
    },
 }
