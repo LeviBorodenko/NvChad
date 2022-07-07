@@ -16,8 +16,13 @@ M.ui = {
    theme = "gruvchad",
 }
 
+
+local pluginOverrides = require "custom.overrides"
+
 M.plugins = {
-   override = {},
+   override = {
+    ["nvim-treesitter/nvim-treesitter"] = pluginOverrides.treesitter,
+   },
    remove = {},
    user = {},
    options = {
