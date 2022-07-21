@@ -24,7 +24,9 @@ M.plugins = {
     ["nvim-treesitter/nvim-treesitter"] = pluginOverrides.treesitter,
    },
    remove = {},
-   user = {},
+   user = {
+      ["tpope/vim-surround"] = {}
+   },
    options = {
       lspconfig = {
          setup_lspconf = "custom.plugins.lspconfig", -- path of lspconfig file
