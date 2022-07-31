@@ -22,16 +22,23 @@ local pluginOverrides = require "custom.overrides"
 M.plugins = {
    override = {
     ["nvim-treesitter/nvim-treesitter"] = pluginOverrides.treesitter,
+    ["williamboman/mason.nvim"] = pluginOverrides.mason,
    },
    remove = {},
    user = {
-      ["tpope/vim-surround"] = {}
-   },
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig", -- path of lspconfig file
+      ["tpope/vim-surround"] = {},
+      ["neovim/nvim-lspconfig"] = {
+        config = function()
+          require "plugins.configs.lspconfig"
+          require "custom.plugins.lspconfig"
+        end,
       },
    },
+   -- options = {
+   --    lspconfig = {
+   --       setup_lspconf = "custom.plugins.lspconfig", -- path of lspconfig file
+   --    },
+   -- },
 }
 
 M.mappings = require("custom.mappings")
