@@ -10,6 +10,7 @@ M.treesitter = {
     "typescript",
     "vue",
     "markdown",
+    "c_sharp",
   },
 }
 M.mason = {
@@ -29,6 +30,8 @@ M.mason = {
     "vue-language-server",
     "dockerfile-language-server",
 
+    -- dotnet
+     "omnisharp-mono",
 
     -- shell
     "shellcheck",
