@@ -31,7 +31,7 @@ M.mason = {
     "dockerfile-language-server",
 
     -- dotnet
-     "omnisharp-mono",
+     "omnisharp",
 
     -- shell
     "shellcheck",

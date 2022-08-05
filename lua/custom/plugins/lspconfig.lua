@@ -11,7 +11,7 @@ for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
       on_attach = on_attach,
       capabilities = capabilities,
-      cmd = {"mono", "/home/leviborodenko/.local/share/nvim/mason/packages/omnisharp-mono/omnisharp/OmniSharp.exe"}
+      cmd = {"dotnet", "/home/leviborodenko/.local/share/nvim/mason/packages/omnisharp/OmniSharp.dll"}
     }
   else
     lspconfig[lsp].setup {
